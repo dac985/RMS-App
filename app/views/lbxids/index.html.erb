@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lbxids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lbxids</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lbxids.each do |lbxid| %>
+      <tr>
+        <td><%= lbxid.lbxids %></td>
+        <td><%= link_to 'Show', lbxid %></td>
+        <td><%= link_to 'Edit', edit_lbxid_path(lbxid) %></td>
+        <td><%= link_to 'Destroy', lbxid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lbxid', new_lbxid_path %>

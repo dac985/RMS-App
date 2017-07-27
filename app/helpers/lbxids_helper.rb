@@ -1,0 +1,2 @@
+module LbxidsHelper
+end
